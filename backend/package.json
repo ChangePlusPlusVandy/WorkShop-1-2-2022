@@ -1,0 +1,26 @@
+{
+  "name": "change-coding-challenge-2022-salomondush",
+  "version": "1.0.0",
+  "description": "Congrats!! You have been selected to engage in the next step of the Change++ application process.",
+  "main": "songs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChangePlusPlusVandy/change-coding-challenge-2022-salomondush.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChangePlusPlusVandy/change-coding-challenge-2022-salomondush/issues"
+  },
+  "homepage": "https://github.com/ChangePlusPlusVandy/change-coding-challenge-2022-salomondush#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "node-fetch": "^3.2.10"
+  }
+}
