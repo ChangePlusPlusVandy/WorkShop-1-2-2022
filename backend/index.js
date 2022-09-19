@@ -17,25 +17,10 @@ const csvToJson = async () => {
 
 // TODO: to make api calls (implemented in js but not node.js) we need an outside library called node-fetch
 const axios = require('axios').default;
-const tracksFromRed = async () => {
+const getRandomCatImages = async () => {
+	const response = await axios.get("https://cataas.com/cat");
 
-    const BASE_URL = 'https://api.musixmatch.com/ws/1.1/'
-    const API_KEY = '536d9d1b5892a02a2c5bab06ddf63747'
-    const red_album_id = 49062023;
+	console.log("response: ", response.data);
+};
 
-    const res = await axios.get(BASE_URL + 'album.tracks.get', {
-        params: {
-            album_id: red_album_id,
-            apikey: API_KEY,
-            page: 1,
-            page_size: 5
-        }
-    });
-
-    const tracks = res.data.message.body.track_list;
-    for (var i = 0; i < tracks.length; ++i){
-        console.log(`id: ${tracks[i].track.track_id}, Name: ${tracks[i].track.track_name}`);
-    }
-}
-
-tracksFromRed();
+getRandomCatImages();
