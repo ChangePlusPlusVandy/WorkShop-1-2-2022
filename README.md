@@ -1,1 +1,3 @@
-# WorkShop-1-2022
+# WorkShop-1-2-2022
+
+Code for both workshops
